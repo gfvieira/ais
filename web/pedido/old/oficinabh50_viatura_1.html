@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+        <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+        <title>SIG-BASE || OFICINA BH-50</title>
+
+        <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+        <link rel="stylesheet" media="screen" href="assets/css/font.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!-- Custom styles for our template -->
+        <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="home">
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Button for smallest screens -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="BHMN"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="active"><a href="/sigbase/index.html">Home</a></li>
+                        <li><a href="/sigbase/emConstrucao.html">Folha N</a></li>
+                        <li><a href="/sigbase/loginSigbase.jsp">Sig-Base</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pedido de Serviço<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/sigbase/emConstrucao.html">Ofícina BH-10</a></li>
+                                <li><a href="/sigbase/pedido/oficinabh34.html">Telemática BH-34</a></li>
+                                <li><a href="/sigbase/pedido/oficinabh50.html">Ofícina BH-50</a></li>
+                                <li><a href="/sigbase/pedido/oficinabh50_viatura.html">Viatura BH-50</a></li>
+                                <li><a href="/sigbase/emConstrucao.html">Atracação Navio MB</a></li>
+                                <li><a href="/sigbase/emConstrucao.html">Atracação Navio Extra-MB</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="oficinabh34_consulta.html">Consultar Pedido</a></li>
+                        <li><a href="/sigbase/manual.html">Como Utilizar?</a></li>
+                        <li><a href="/sigbase/emConstrucao.html">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div> 
+        <!-- /.navbar -->
+
+        <!-- Header -->
+        <header id="head">
+            <div class="row mt">
+                <div class="col-lg-12">
+                    <div class="form-panel">
+                        <h3 class="mb"><i class="fa fa-angle-double-right"></i><i>Serviço de Agendamento de Viatura do BH-50.</i> </h3><br><br>
+                        <form class="form-horizontal style-form" action="OficinaBh50.jsp" method="post">
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Nome</label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" id="nome" name="nome" maxlength="200" required>
+                                </div>
+                                <label class="col-sm-1 col-sm-2 control-label">NIP</label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" id="nip" name="nip" maxlength="30" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Ramal</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" id="ramal" name="ramal" maxlength="4" required>
+                                </div>
+                                <label class="col-sm-1 col-sm-2 control-label">Setor</label>
+                                <div class="col-sm-2">
+                                    <select class="form-control" size="1" name="setor" required>
+                                        <option value="">Selecione!</option>
+                                        <option value="DHN">DHN</option>
+                                        <option value="CHM">CHM</option>
+                                        <option value="CAMR">CAMR</option>
+                                        <option value="GNHO">GNHo</option>
+                                        <option value="BH-01">BH-01</option>
+                                        <option value="BH-02">BH-02</option>
+                                        <option value="BH-03">BH-03</option>
+                                        <option value="BH-04">BH-04</option>
+                                        <option value="BH-05">BH-05</option>
+                                        <option value="BH-06">BH-06</option>
+                                        <option value="BH-07">BH-07</option>
+                                        <option value="BH-10">BH-10</option>
+                                        <option value="BH-11">BH-11</option>
+                                        <option value="BH-12">BH-12</option>
+                                        <option value="BH-13">BH-13</option>
+                                        <option value="BH-20">BH-20</option>
+                                        <option value="BH-21">BH-21</option>
+                                        <option value="BH-22">BH-22</option>
+                                        <option value="BH-23">BH-23</option>
+                                        <option value="BH-24">BH-24</option>
+                                        <option value="BH-25">BH-25</option>
+                                        <option value="BH-30">BH-30</option>
+                                        <option value="BH-31">BH-31</option>
+                                        <option value="BH-32">BH-32</option>
+                                        <option value="BH-33">BH-33</option>
+                                        <option value="BH-34">BH-34</option>
+                                        <option value="BH-40">BH-40</option>
+                                        <option value="BH-41">BH-41</option>
+                                        <option value="BH-42">BH-42</option>
+                                        <option value="BH-43">BH-43</option>
+                                        <option value="BH-44">BH-44</option>
+                                        <option value="BH-45">BH-45</option>
+                                        <option value="BH-50">BH-50</option>
+                                        <option value="BH-51">BH-51</option>
+                                        <option value="BH-52">BH-52</option>
+                                        <option value="BH-53">BH-53</option>
+                                        <option value="BH-54">BH-54</option>
+                                        <option value="BH-50">BH-55</option>
+
+                                    </select>
+                                </div>                                            
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Atendimento</label>
+                                <div class="col-sm-2">
+                                    <input type="hidden" class="form-control" id="atendimento" name="atendimento" value="GARAGEM">
+                                    <input type="text" class="form-control" value="GARAGEM" disabled>
+                                </div> 
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Solicitação</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="sol" name="sol" placeholder="Digite aqui sua solicitação!" maxlength="500" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Data do Evento</label>
+                                <div class="col-sm-3">
+                                    <input name="dateini" id="dateini" type="date" class="form-control" required min="1910-01-01" max="2016-01-01" />
+                                </div>
+                                <label class="col-sm-2 col-sm-2 control-label">Hora do Evento</label>
+                                <div class="col-sm-3">
+                                    <select class="form-control" size="1" name="horaini" required>
+                                        <option value="">Selecione!</option>
+                                        <option value="00:00">00:00</option>
+                                        <option value="01:00">01:00</option>
+                                        <option value="02:00">02:00</option>
+                                        <option value="03:00">03:00</option>
+                                        <option value="04:00">04:00</option>
+                                        <option value="05:00">05:00</option>
+                                        <option value="06:00">06:00</option>
+                                        <option value="07:00">07:00</option>
+                                        <option value="08:00">08:00</option>
+                                        <option value="09:00">09:00</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="22:00">22:00</option>
+                                        <option value="23:00">23:00</option>
+                                        <option value="24:00">24:00</option>
+                                    </select>                                
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Pessoas a Bordo</label>
+                                <div class="col-sm-2">
+                                    <input type="number" class="form-control" id="pob" name="pob" min="2" max="90" required>
+                                </div>
+                            </div>                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Observação</label>
+                                <div class="col-sm-8">
+                                    <textarea class="form-control" rows="3" id="obs" name="obs" maxlength="500" placeholder="(OPCIONAL) - Digite aqui uma observação para o atendimento"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <hr>
+                            <br>
+                            <div>
+                                <button type="submit" class="btn btn-theme">Cadastrar</button>
+                                <input type="button"  class="btn btn-theme"  value="Cancelar" onClick="Voltar()">
+                            </div>
+                            <br>
+                        </form>
+                    </div>
+
+                </div>    
+            </div>
+
+        </header>
+        <!-- /Header -->
+        <footer id="footer" class="top-space">
+
+            <div class="footer1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-3 widget">
+                            <h3 class="widget-title">Contato</h3>
+                            <div class="widget-body">
+                                <p>+55 21 2189-3399<br>
+                                    <a href="mailto:#">gustavo.ferreira@bhm.mar.mil.br</a><br>
+                                    <br>
+                                    Rua Barão de Jaceguai, s/n° - Ponta da Armação - Niterói - Rio de Janeiro - Brasil
+                                </p>	
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 widget">
+                            <h3 class="widget-title"> </h3>
+                            <div class="widget-body">
+                                <p class="follow-me-icons">
+
+                                </p>	
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 widget">
+                            <h3 class="widget-title">Sig-Base</h3>
+                            <div class="widget-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+                                <p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
+                            </div>
+                        </div>
+
+                    </div> <!-- /row of widgets -->
+                </div>
+            </div>
+
+            <div class="footer2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6 widget">
+                            <div class="widget-body">
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 widget">
+                            <div class="widget-body">
+                                <p class="text-right">
+                                    Copyright &copy; 2015, 3º SG-TE Gustavo. Designed by <a href="#" rel="designer">Divisão de Telemática.</a> 
+                                </p>
+                            </div>
+                        </div>
+
+                    </div> <!-- /row of widgets -->
+                </div>
+            </div>
+
+        </footer>	
+
+
+
+
+
+        <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/headroom.min.js"></script>
+        <script src="assets/js/jQuery.headroom.min.js"></script>
+        <script src="assets/js/template.js"></script>
+        <script src="assets/js/polyfiller.js"></script>
+        <script>
+                                    webshims.setOptions('forms-ext', {types: 'date'});
+                                    webshims.polyfill('forms forms-ext');
+        </script>
+    </body>
+</html>
